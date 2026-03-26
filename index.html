@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>J's Landscaping | Affordable Lawn Care & Community Service in Durant, OK</title>
+  <meta name="description" content="J's Landscaping in Durant, OK offers low-cost yard work ($20–$40), free services for widows, single mothers, and the elderly. Christian-based, community-focused lawn care. Call 580-364-7548.">
+  <meta name="keywords" content="landscaping Durant OK, lawn care Durant, affordable yard work, J's Landscaping, lawn mowing Durant, Christian landscaping, community lawn service, Bryan County landscaping">
+  <meta name="author" content="J's Landscaping">
+  <meta property="og:title" content="J's Landscaping | Durant OK Lawn Care & Community Help">
+  <meta property="og:description" content="Love your neighbor through affordable landscaping. Serving widows, single mothers, elderly. Low-cost yard work $20–$40.">
+  <meta property="og:image" content="https://github.com/TitanBusinessPros/JL-316/raw/main/J's-Logo-T.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="https://github.com/TitanBusinessPros/JL-316/raw/main/J's-Logo-T.png">
+  <link rel="apple-touch-icon" href="https://github.com/TitanBusinessPros/JL-316/raw/main/J's-Logo-T.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fefcf0;
+      color: #1e2f1c;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* header / nav */
+    .navbar {
+      background: #0f2b0d;
+      color: white;
+      padding: 0.9rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    }
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .logo-text {
+      font-weight: 800;
+      font-size: 1.5rem;
+      letter-spacing: -0.5px;
+    }
+    .logo-text span {
+      color: #f9c74f;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+    .nav-links a:hover {
+      color: #f9c74f;
+    }
+    @media (max-width: 760px) {
+      .navbar .container {
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+      .nav-links a {
+        margin: 0 0.8rem;
+      }
+    }
+
+    /* hero */
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      background: linear-gradient(145deg, #eef5e6 0%, #fff6e0 100%);
+    }
+    .floating-logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+    .glow-float {
+      width: 520px;
+      max-width: 90%;
+      animation: floatAnim 3.2s ease-in-out infinite, glowPulse 2.2s alternate infinite;
+      filter: drop-shadow(0 0 12px #ffd966);
+    }
+    @keyframes floatAnim {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0px); }
+    }
+    @keyframes glowPulse {
+      0% { filter: drop-shadow(0 0 6px #ffd966) drop-shadow(0 0 4px #f9b81b); }
+      100% { filter: drop-shadow(0 0 22px #ffbc3c) drop-shadow(0 0 12px #f7931e); }
+    }
+    .hero h1 {
+      font-size: 2.7rem;
+      font-weight: 800;
+      color: #1f4f1c;
+    }
+    .verse {
+      font-style: italic;
+      background: #fff2df;
+      display: inline-block;
+      padding: 0.5rem 1.8rem;
+      border-radius: 60px;
+      margin: 1rem 0;
+      font-weight: 500;
+      font-size: 1.1rem;
+      color: #3b2a1f;
+    }
+    .hero .tagline {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #3c6e2f;
+    }
+    .icon-row {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin: 1rem 0 0.5rem;
+      font-size: 1.5rem;
+      color: #4c8b3c;
+    }
+
+    /* sections */
+    section {
+      padding: 3.5rem 0;
+      border-bottom: 1px solid #e2e0cf;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      text-align: center;
+      position: relative;
+      display: block;
+    }
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70px;
+      height: 4px;
+      background: #f9b81b;
+      border-radius: 4px;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 28px;
+      padding: 1.8rem;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+      text-align: center;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+    }
+    .card i {
+      font-size: 2.6rem;
+      color: #4c8b3c;
+      margin-bottom: 1rem;
+    }
+    .price-badge {
+      background: #1f4f1c;
+      color: white;
+      border-radius: 40px;
+      padding: 0.3rem 1rem;
+      display: inline-block;
+      font-weight: bold;
+      margin: 0.8rem 0;
+    }
+    .btn {
+      display: inline-block;
+      background: #2c7a2a;
+      color: white;
+      padding: 0.8rem 1.8rem;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s;
+      margin-top: 1rem;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid #2c7a2a;
+      color: #2c7a2a;
+    }
+    .btn-outline:hover {
+      background: #2c7a2a;
+      color: white;
+    }
+    .btn:hover {
+      background: #1b5619;
+      transform: scale(1.02);
+    }
+    .support-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin: 2rem 0;
+    }
+    .cash-tag {
+      background: #0a2b1a;
+      padding: 0.5rem 1rem;
+      border-radius: 36px;
+      font-family: monospace;
+      font-weight: bold;
+      color: #f9c74f;
+      display: inline-block;
+    }
+    .contact-phone {
+      font-size: 1.8rem;
+      font-weight: 800;
+      background: #2c7a2a10;
+      display: inline-block;
+      padding: 0.5rem 1.8rem;
+      border-radius: 60px;
+    }
+    .social-share {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    .share-btn {
+      background: #e9ecef;
+      padding: 0.5rem 1rem;
+      border-radius: 32px;
+      cursor: pointer;
+      transition: 0.2s;
+      font-weight: 500;
+    }
+    footer {
+      background: #0f2b0d;
+      color: #ddd;
+      text-align: center;
+      padding: 2rem 0;
+    }
+    .footer-credit {
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid #2e4a2a;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .footer-credit img {
+      height: 40px;
+      width: auto;
+      transition: opacity 0.2s;
+    }
+    .footer-credit img:hover {
+      opacity: 0.8;
+    }
+    .footer-credit span {
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 2rem; }
+      .section-title { font-size: 1.7rem; }
+    }
+    .seo-rich p {
+      margin-bottom: 1rem;
+    }
+    .seo-rich h3 {
+      margin-top: 1.6rem;
+      margin-bottom: 0.8rem;
+      color: #1f4f1c;
+      text-align: center;
+    }
+    .centered-bottom {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .contact-info-box {
+      text-align: center;
+      background: #fff8ec;
+      border-radius: 48px;
+      padding: 2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .contact-info-box p {
+      margin: 0.8rem 0;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="logo-text">J's <span>Landscaping</span> ✝️</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#community">Community</a>
+      <a href="#support">Support</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <!-- Hero + floating logo + elderly icon row -->
+  <div id="home" class="hero">
+    <div class="container">
+      <div class="floating-logo">
+        <img class="glow-float" src="https://github.com/TitanBusinessPros/JL-316/raw/main/J's-Logo-T.png" alt="J's Landscaping Logo - John 3:16">
+      </div>
+      <h1>J's Landscaping</h1>
+      <div class="verse">💚 "Love Your Neighbor as Yourself." – Mark 12:31 💚</div>
+      <p class="tagline">Helping Our Community in DURANT, OK!</p>
+      <div class="icon-row">
+        <span><i class="fas fa-female"></i> Widows</span>
+        <span><i class="fas fa-child"></i> Single Mothers</span>
+        <span><i class="fas fa-walking-cane"></i> Elderly</span>
+      </div>
+      <a href="tel:5803647548" class="btn" style="margin-top: 1.2rem;"><i class="fas fa-phone-alt"></i> Call or Text: 580-364-7548</a>
+    </div>
+  </div>
+
+  <!-- Community Mission: Widows, Single Mothers, Elderly (icons visible) -->
+  <section id="community">
+    <div class="container">
+      <h2 class="section-title">We Serve With Compassion</h2>
+      <div class="grid-3">
+        <div class="card"><i class="fas fa-female"></i><h3>Widows</h3><p>Honoring & supporting widows with dignified yard care.</p></div>
+        <div class="card"><i class="fas fa-child"></i><h3>Single Mothers</h3><p>Reliable lawn maintenance so you can focus on family.</p></div>
+        <div class="card">
+          <i class="fas fa-walking-cane"></i> 
+          <i class="fas fa-heart" style="font-size:1.2rem; color:#e67700;"></i>
+          <h3>Elderly <span style="font-size:1.2rem;">👴👵</span></h3>
+          <p>Safe, gentle service for seniors in Durant.</p>
+        </div>
+      </div>
+      <div style="background: #fdf8e7; border-radius: 48px; padding: 2rem; text-align: center; margin-top: 2rem;">
+        <h3><i class="fas fa-hand-holding-heart"></i> Low-Cost Yard Work • $20 – $40</h3>
+        <p class="price-badge" style="font-size: 1.3rem; background:#2c7a2a;">💰 $20–$40 per visit</p>
+        <p><strong>If You Really Need Help, It's Free.</strong> ❤️ No questions asked, just neighborly love.</p>
+        <p><i class="fas fa-map-marker-alt"></i> Serving Durant, OK and surrounding Bryan County.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Landscaping Services + SEO content -->
+  <section id="services">
+    <div class="container seo-rich">
+      <h2 class="section-title">Professional Landscaping in Durant, OK</h2>
+      <div class="grid-3" style="margin-bottom: 2rem;">
+        <div class="card"><i class="fas fa-leaf"></i><h3>Lawn Mowing & Edging</h3><p>Precision cuts, crisp edges, manicured turf.</p></div>
+        <div class="card"><i class="fas fa-tree"></i><h3>Tree & Shrub Trimming</h3><p>Healthy growth & curb appeal.</p></div>
+        <div class="card"><i class="fas fa-tint"></i><h3>Seasonal Cleanup</h3><p>Leaf removal, mulching, spring/fall prep.</p></div>
+      </div>
+      <div>
+        <h3>Why J's Landscaping is Durant's Trusted Lawn Care Team</h3>
+        <p>Located in the heart of Bryan County, J's Landscaping delivers premium lawn care and landscaping services rooted in integrity and community values. Whether you need weekly mowing, bush hogging, flower bed mulching, or full property maintenance, our family-owned business treats every yard like our own. Durant homeowners know that our climate—hot summers and unpredictable storms—requires professional attention to keep lawns lush and weed-free. We specialize in drought-tolerant landscaping, native Oklahoma plants, and soil aeration techniques that revive tired turf.</p>
+        
+        <h3>Comprehensive Lawn Maintenance for Durant Residents</h3>
+        <p>From the neighborhoods near Southeastern Oklahoma State University to rural properties around Lake Durant, we provide consistent, affordable yard care. Our services include mowing with bagging or mulching options, string trimming, edging along sidewalks and driveways, and blowing debris to leave your property immaculate. We also offer seasonal fertilization advice, weed control, and core aeration to promote deep root growth. For commercial properties or rental units, J's Landscaping delivers reliable scheduling and transparent pricing—no hidden fees, just honest work.</p>
+        
+        <h3>Affordable Landscaping with a Mission</h3>
+        <p>Inspired by John 3:16 and the call to love neighbors, we set aside slots for widows, single mothers, and the elderly—often free of charge or at our symbolic $20–$40 rate. This isn't just marketing; it's our ministry. We believe a well-maintained yard brings peace of mind and dignity. That's why we actively collaborate with local churches and community centers in Durant to identify families who need a helping hand. If you're facing financial hardship, simply reach out; we'll take care of your property without any cost.</p>
+
+        <h3>Expert Tips for Oklahoma Lawn Care</h3>
+        <p>Durant falls in USDA hardiness zone 7b, where Bermudagrass, Zoysia, and tall fescue thrive. Our specialists recommend mowing at the correct height (2.5–3 inches for fescue, 1–2 inches for Bermuda) to shade out weeds. During summer, deep watering twice a week beats daily sprinkling. We also provide organic mulch installation to retain soil moisture and give planting beds a polished look. Whether you need drought-resistant xeriscaping or vibrant annual color rotation, J's Landscaping brings decades of local expertise to every project.</p>
+
+        <h3>Landscape Design & Curb Appeal Enhancement</h3>
+        <p>First impressions matter. Our team helps homeowners boost property value with custom landscape design: native perennials like black-eyed susans, aromatic sumac, and ornamental grasses that require minimal irrigation. We also install decorative rock beds, retaining walls, and paver walkways. With spring approaching, many Durant residents schedule refresh services—pruning overgrown shrubs, re-mulching flower beds, and installing fresh sod. J’s Landscaping offers free estimates and works within any budget, because a beautiful yard shouldn’t break the bank.</p>
+
+        <h3>Eco-Friendly Practices & Sustainable Yard Care</h3>
+        <p>We care about God’s creation. That’s why we use eco-friendly products, battery-powered equipment where possible, and reduce noise pollution. Our integrated pest management approach targets weeds and pests without harming beneficial insects. For clients interested in organic lawn programs, we provide 100% natural fertilizer options that build healthy soil microbiomes. Sustainable landscaping not only protects Lake Texoma and local waterways but also creates safer play spaces for children and pets.</p>
+
+        <h3>Serving Durant, Calera, & Bryan County</h3>
+        <p>From residential subdivisions to acreages, our service area covers all of Durant and nearby communities. We’re proud to support local events and partner with the Durant Chamber of Commerce. Whether you're a new homeowner needing regular maintenance or a senior citizen requiring assistance, you can count on prompt service and a friendly smile. Our phone line is always open: text or call 580-364-7548 for a same-week appointment.</p>
+
+        <div class="centered-bottom">
+          <p><em>— J's Landscaping, rooted in faith and service.</em></p>
+          <p><strong>📞 Call today: 580-364-7548 | Free estimates | Emergency cleanups available</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Support Options -->
+  <section id="support">
+    <div class="container" style="text-align: center;">
+      <h2 class="section-title">How You Can Support</h2>
+      <div class="support-buttons">
+        <a href="tel:5803647548" class="btn btn-outline"><i class="fas fa-hands-helping"></i> Volunteer Your Time</a>
+        <a href="tel:5803647548" class="btn"><i class="fas fa-seedling"></i> Hire J’s for Lawn Care</a>
+        <button id="donateBtn" class="btn btn-outline"><i class="fab fa-cashapp"></i> Donate via Cash App</button>
+      </div>
+      <div class="cash-tag">
+        ⚡ $JLandscaping316 ⚡
+      </div>
+      <p style="margin-top: 1rem;">Your generosity fuels free services for those in need. Every dollar stays in Durant.</p>
+    </div>
+  </section>
+
+  <!-- Share Section -->
+  <section style="background: #fff4e6;">
+    <div class="container" style="text-align: center;">
+      <h2><i class="fas fa-share-alt"></i> Know Someone Who Needs Help?</h2>
+      <p style="font-size: 1.2rem; margin: 0.5rem 0;">Please Share This Post & Spread the Word!</p>
+      <div class="social-share">
+        <div class="share-btn" id="shareFB"><i class="fab fa-facebook-f"></i> Facebook</div>
+        <div class="share-btn" id="shareTW"><i class="fab fa-twitter"></i> Twitter</div>
+        <div class="share-btn" id="copyLinkBtn"><i class="fas fa-link"></i> Copy Link</div>
+      </div>
+      <p style="margin-top: 1rem;">Tag a neighbor or share with your church group. Together we can help widows, single moms, and elderly families.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section (no form) -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="contact-info-box">
+        <div class="contact-phone"><i class="fas fa-mobile-alt"></i> 580-364-7548</div>
+        <p><i class="fas fa-envelope"></i> Email: <a href="mailto:jslandscaping316@outlook.com" style="color:#2c7a2a;">jslandscaping316@outlook.com</a></p>
+        <p><i class="fas fa-clock"></i> Mon-Sat: 7am–7pm | Emergency calls welcome</p>
+        <p><i class="fas fa-map-pin"></i> Durant, OK 74701</p>
+        <a href="tel:5803647548" class="btn" style="margin-top: 1rem;"><i class="fas fa-phone"></i> Call Now</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>✝️ J's Landscaping – John 3:16 & Mark 12:31 ✝️</p>
+    <p>Helping widows, single mothers, and the elderly in Durant, Oklahoma with love and affordable yard work.</p>
+    <p>© 2026 J's Landscaping | Low-Cost Lawn Care | Free help for those in need</p>
+    <div class="footer-credit">
+      <a href="https://www.facebook.com/TitanBusinessPros" target="_blank" rel="noopener noreferrer">
+        <img src="https://github.com/TitanBusinessPros/JL-316/raw/main/Titan%20Logo-2.png" alt="Titan Business Pros LLC" style="height:40px; width:auto;">
+      </a>
+      <span>Website Created By Titan Business Pros LLC</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const donateBtn = document.getElementById('donateBtn');
+  if(donateBtn) {
+    donateBtn.addEventListener('click', () => {
+      alert("❤️ Thank you for supporting J's Landscaping! Send donations via Cash App to: $JLandscaping316\nYour generosity directly helps widows, single mothers, and elderly in Durant, OK. God bless you!");
+      window.open("https://cash.app/$JLandscaping316", "_blank");
+    });
+  }
+
+  const shareFB = document.getElementById('shareFB');
+  const shareTW = document.getElementById('shareTW');
+  const copyBtn = document.getElementById('copyLinkBtn');
+  const currentUrl = encodeURIComponent(window.location.href);
+  const shareText = encodeURIComponent("J's Landscaping in Durant, OK offers low-cost yard work ($20-40) & free help for widows, single mothers, and elderly. Love your neighbor! Call 580-364-7548");
+
+  if(shareFB) {
+    shareFB.addEventListener('click', () => {
+      window.open(`https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`, '_blank', 'width=600,height=400');
+    });
+  }
+  if(shareTW) {
+    shareTW.addEventListener('click', () => {
+      window.open(`https://twitter.com/intent/tweet?text=${shareText}&url=${currentUrl}`, '_blank', 'width=600,height=400');
+    });
+  }
+  if(copyBtn) {
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        alert("✅ Link copied! Share it with friends, church groups, or neighbors who could use affordable landscaping.");
+      }).catch(() => {
+        alert("Please manually copy the URL from browser bar.");
+      });
+    });
+  }
+
+  document.querySelectorAll('.nav-links a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElem = document.getElementById(targetId);
+      if(targetElem) {
+        targetElem.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+</body>
+</html>
